@@ -1,3 +1,279 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    /* display: flex; */
+    line-height: 1;
+    margin:0 60px;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*Designing the navigation tab*/
+nav {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	justify-content: space-around;
+}
+ nav  a {
+display: flex;
+flex-direction: row;
+text-decoration: none;
+color: gray;
+}
+/* Designing the picture below the navigation bar*/
+#top-img {
+	display: flex;
+	flex-direction: row;
+	height: 150px;
+	margin: auto;
+	align-items: stretch;
+
+	
+
+}
+/*dsigning the img container to control the size of the image */
+.cross-section .container{
+	align-items: center; 
+	
+}
+
+#container1{
+	width: 400px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-left: 300px;
+}
+#container2 {
+	align-items: baseline;
+	width: 400px;
+	height: 150px;
+	margin-bottom: 10px;
+	
+}
 
 
+#above-pic {
+	display: flex;
+	justify-content: space between;
+	margin: 20px;
+}
+
+.cross-section .middle-img {
+	margin: 20px;
+	width: 96%;
+}
+
+#below-pic {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.cross-section address {
+	margin: 20px;
+}
+footer {
+	text-align: center;
+}
+
+
+#button {
+	margin-top: 10px;
+}
+
+#innovation{
+	font-size: 40px;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+	
+}
+.cross-section .container{
+margin: 10px;
+}
+.cross-section .container img {
+	padding-bottom: 10px;
+	height: 90px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+	/*Styling of services page*/
+
+	.services-header-img {
+width: 90%;
+margin: 5%;
+	}
+
+	.top-paragraph, h1 {
+		width: 90%;
+		margin: 5%;
+	}
+
+#container span.box {
+width: 40%;
+margin: 5%;
+border: 1px solid gray;
+flex-direction: row;
+background: rgb(245, 239, 239);
+}
+#container{
+	width: 90%;
+	margin: 2%;
+	display: flex;
+    flex-wrap: wrap;
+	align-content: space-between;
+	align-items: center;
+	align-self: baseline;
+	flex-direction: row;
+}
+.botton-section, hr{
+display: flex;
+width: 90%;
+margin: 5%;
+}
+.content-section h1{
+margin: 5%;
+}
+/* hidding logo-fo-tablet for desktop view */
+ .tablet-img .logo-for-tablet{
+    display: none;
+}
+
+/* Inserting media curies at 800 */
+
+@media(max-width: 800px){
+#container1{
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#container2{
+    display: none;
+}
+.logo{
+    /* hidding the logo */
+    display: none;
+}
+.tablet-img .logo-for-tablet{
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    height: 30px;
+}
+nav{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+}
+/* Inserting media curies at 500px */
+
+@media(max-width: 500px){
+.tablet-img .logo-for-tablet{
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    height: 30px;
+}
+#container1{
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#container2{
+    display: none;
+}
+.logo{
+    /* hidding the logo */
+    display: none;
+}
+.tablet-img .logo-for-tablet{
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    height: 30px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a {
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    /* padding: 10px 0; */
+    /* border: 1px solid gray; */
+}
+.cross-section {
+    display: flex;
+    flex-direction: column;
+}
+#below-pic{
+    display: flex;
+    flex-direction: column;
+}
+}
